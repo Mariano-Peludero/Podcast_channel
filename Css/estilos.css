@@ -1,0 +1,880 @@
+html, body {
+  margin: 0px;
+}
+/* MENU */
+
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color:blue;  
+  
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+}
+.menu a {
+  color:white;
+  font-family: monospace;
+  font-size: 16px;
+  
+}
+.menu a:hover{
+  color: aqua;
+  text-decoration: line-through;
+
+}.menu a:active{
+  color:gray;
+  text-decoration: line-through;
+
+}
+
+ .header .logo {
+  width: 24px;
+  height: 24px;
+  vertical-align: top;
+  margin-left: 16px;
+  vertical-align: top;
+  margin-top: 10px;  
+}
+
+/* menu */
+  
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* MENU icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 18px 20px;
+  position: relative;
+  user-select: none;
+  
+}
+
+.header .menu-icon .navicon { /*Rayita del medio */
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before { /* rayita del menu */
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* MENU btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+  /* CONTENEDOR */
+.Contenedor{
+  width:100%;
+  margin: 0px;
+}
+
+/* DIV - TITULO PRINCIPAL - HELLO- */
+.Seccion-Titulo{
+  width:100%;
+  height:auto;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align:center;
+  display: flex;
+  margin-left:16px;
+  
+}
+
+/* TITULO */
+.Titulo{
+  width:90%;
+  height:auto;
+  display: flex;
+  font-family:sans-serif;
+  color: #060A24;
+  font-size: 25px;   
+  color: #060A24;
+  text-align:left;
+  justify-content: center;
+  margin-top:20px;
+  margin-bottom: 16px; 
+  
+   
+ }
+ h1::after{
+   content:".";
+   font-size:36px;
+   font-family: IBMPlexSans;
+   color:black;
+   letter-spacing: 0;
+ }
+ /* SUBTITULO */
+ .Subtitulo{
+  display: flex;
+  width:288px;
+  height:66px;
+  font-family:monospace;
+  font-size: 14px;
+  color: #060A24;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-align:left;  
+  margin-top:-50px;
+  margin-bottom: 36px;
+ } 
+
+ /* BOTON DEBAJO DE CONOCE MAS  */
+ 
+  .Nosotros{
+    text-align: center;
+    text-decoration: none;
+    margin-left: 0px;    
+    background:#00F3BB;
+    width:288px; 
+    height: 48px;
+    display: flex;
+    justify-content: center; 
+    margin-top: 36px;
+    margin-bottom: 20px; 
+    border: none; 
+  }
+  .BotonEnlace{
+    padding: 15px 50px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .Nosotros:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+   }
+
+ .BotonEnlace a:hover{
+  color:white; 
+ }
+
+ .sections{
+   margin: 0px;
+   
+ }
+ /* CUADRRO AZUL */
+ .CuadroAzul{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width:100%;
+    height:auto;
+    background-color: blue;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  }
+/* DIV DONDE ESTAN LOS ENVEVIDOS */
+  .Episodios{
+    width: 100%;
+    font-family:sans-serif;
+    font-size: 48px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align:left;
+    margin-left: 16px;  
+        
+  }
+  #episodio{
+    font-size: 36px;
+    margin-bottom: 16px;
+    
+    
+  }
+  /* ENVEVIDOS DE SPOTIFY */
+  .Embebidos{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 150px;
+    
+  }
+  .imgUno, .imgDos, .imgTres, .imgCuatro{
+    width:298px;
+    height:175px;
+    border: none;
+    
+  } 
+  
+/* DIV DONDE ESTE LA IMG DEL CELULAR */
+  .ImgCelu{
+    width:100%;
+    height:760px;
+    display:flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  /* DIV DE IMEGEN DEL CELULAR */
+  .ImgPhone{
+    position: absolute;
+  }
+   /* IMAGEN DEL CELULAR */
+  .Phone{
+    display: flex;
+    width: 310px;
+    height: 519px;
+    border-radius: 10%;
+    margin-top:-130px;
+  }
+  /* DIV DEL ESPACIO DE TITULO */
+  #TituloBajo{
+    position: relative;
+    width: 90%;
+    top:380px;    
+  }
+   /* TITULO DONDE VENIMOS */
+  .TituloBajo{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width:288px;
+    height: 84px;
+    text-align:left;
+    font-family: sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 42px;
+
+  }
+  /* TEXTO  */
+  .TextBajo {
+    width: 288px;
+    height: 254px;
+    display: flex;
+    font-size: 16px;
+    font-family: monospace;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 100%;
+    text-align:left;
+    margin-top: -50px;   
+  }
+
+  /* TITULO DE LOS INVITADOS ESTELARES */
+  #tituloInvitados{
+    width:288px;
+    height: 84px;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    margin-left: 16px;
+    margin-top:54px;
+    margin-bottom: 14px;
+  }
+  /* DIV DONDE ESTAN LAS IMAGENES */
+  .invitados{
+    display:flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: center;
+    width:100%;
+    justify-content: center;   
+  }
+  /* IMAGENES */
+  .imgInvitados{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width:100%;
+    height: 243px;
+  }
+  /* TITULO ALGUNO DE NUSTROS TEMAS */
+  #titulotemas{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width:288px;
+    height: 84px;
+    font-family: sans-serif;
+    font-size: 36px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align:left;
+    margin-top: 48px;
+    margin-bottom: 37;
+    margin-left: 16px;    
+  }
+  /* DIV DONDE ETAN LAS IMAGENES Y TEXTO */
+  .Temas{
+    display: flex;
+    align-items:center; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 65%;
+    align-items:center;
+    margin-left: 70px;
+    margin-top: 37px;
+    
+      
+  }
+    
+  /* IMAGENES */
+  .imgBjo{
+    display: flex;
+    align-items:center; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 288px;
+    justify-content: center;
+    
+  } 
+  
+  /* DIV DE TEXTO DEBAJO DE LAS IMAGENES */
+   .TextImgUno{ 
+    display: flex;
+    text-align:center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 100%;
+    height: 64px;
+    justify-content: center;
+    
+  }
+  /* TEXTO DEBAJO DE LAS IMAGENES */
+   .TextImgUno>p{ 
+    width: 100%;
+    margin-top: 0px;
+    font-family: sans-serif;
+    font-size: 24px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+   }
+   /* CUADRO AZUL DE ABAJO */
+   .CadroAzulBajo{
+    display: flex;
+    background: blue;
+    clip-path: polygon(0 36%, 100% 0, 100% 100%, 0% 100%);
+    text-align:center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    background: blue;
+    width:100%;
+    height:auto;
+  
+  }
+  /* TITULO DENTRO DEL CUADRO AZUL BAJO */
+  .TituloNovedades{
+    width: 288px;
+    height:126px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    background-color: blue;
+    color:white;
+    font-size:36px;
+    font-family: sans-serif;
+    margin-top: 130px;
+    margin-left: 20px;
+            
+  }
+  
+  /* BOTOD DEL CUADRO AZUL DE ABAJO  */
+  .BotonDos{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    margin: auto;
+    width:288px; 
+    height: 48px;
+    font-size: 16px;
+    font-family: monospace;
+    color: #060A24;
+    background:#00F3BB;
+    margin-bottom: 67px;
+    margin-left: 16px;
+    margin-right: 16px;
+    justify-content: center;
+    margin-top:30px;
+    text-decoration: none;     
+    }
+     .BotonDos:hover{
+      background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+     }
+     .BotonEnlace:hover{
+       color: white;
+       
+
+     }
+     .BotonEnlace2{
+       text-decoration: none;
+
+      
+      color: black;
+      padding: 10px 10px;  
+    }
+    .BotonEnlace2:hover{
+      color: white;
+      
+    }
+   /* FUTTER */
+   .footer{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    width:100%; 
+    
+   }
+   .Cody{
+    width: 227px;
+    height: 22px;
+    margin-top: 24px;
+    margin-left: 50px;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-bottom: 16px;
+    font-family: monospace;
+    
+   }
+   .Icons{
+    
+    margin-left: 20px;
+    font-size: 16px;
+    width: 100%;
+    color: black;
+    margin-top: 16px;
+    margin-bottom: 31px;
+    
+  }
+  .Icons a{
+    color: black;
+  }
+  .fa{
+      padding-left: 30px;
+      font-size: 18px;
+      justify-content: center;
+  }
+
+  
+  
+
+
+
+
+
+  
+  @media (min-width:600px){
+    html,body{
+      margin: 0px;
+    }
+    .Contenedor{
+      width:1440px;
+      
+      background:white;            
+    }
+    .header{
+      width: 90%;
+
+    }
+    .header ul{
+      background:white;
+            
+    }
+    
+   .menu a {
+     font-size: 16px;
+      color:#060A24;
+      
+   }    
+   .header li {
+    float: left;
+   }
+   .header>.logo{
+    width: 36px;
+    height: 36px;
+    margin-left: 100px;
+    margin-top: 22px;
+   }
+   .header li a {
+    padding: 20px 30px;
+   }
+   .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+    display: flex;
+    
+   }
+   .header .menu-icon {
+    display: none;
+   }
+
+   .Seccion-Titulo{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 100%;
+    height:auto;
+    align-items:left;
+    justify-content: left;
+        
+   }
+   .Titulo{
+    width: 70%;
+    height: 84px;
+    margin-top: 100px;
+    margin-left:200px;
+    font-size: 35px;
+    font-family: monospace;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+    justify-content: left;
+    
+  }
+  h1::after{
+    content:".";
+    font-size:64px;
+    font-family: IBMPlexSans;
+    color:#0000EC;
+    letter-spacing: 0;
+  }
+
+   /* subtitulo */
+   .Subtitulo{
+    display: flex;
+    width: 628px;
+    height: 48px;
+    font-family: monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 24px;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    margin-left: 200px;
+    text-align: left;
+    margin-top: 0px;
+       
+   }
+   .Boton{
+    text-align:left;
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+    width: 226px; 
+    height: 56px;
+    margin-top: 60px;
+    margin-left: -640px;
+    margin-bottom: 50px;
+    
+   }
+   .Nosotros{
+     width: 100%;
+   }
+      
+   .CuadroAzul{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height:auto;
+    background: blue;    
+   }
+   .Episodios{
+     width: 400px;
+     margin-top: 50px;
+     margin-bottom: -50px;
+   }
+   #episodio{
+     margin-left:200px;
+     font-size: 40px;
+     font-family: sans-serif;
+         
+   }
+
+   .Enbebidos{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 0px;
+        
+   }
+      
+   .imgUno, .imgTres{ 
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 570px;
+    height: 232px;
+    
+    margin-top: 72px; 
+    
+   }
+   .imgDos, .imgCuatro{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 570px;
+    height: 232px;
+    margin-left: 52px;
+    margin-top: 72px;
+    
+   }
+   .Phone{
+    margin-left: 200px;
+    width: 457px;
+    height: 660px;
+   }
+   .ImgCelu{
+    width: auto;
+    height:550px;
+    display:flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-between;   
+  }
+  .ImgPhone{
+    width: 450px;
+    height: 660px;
+    margin-top: 46px;
+  }
+  #TituloBajo{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    position: absolute;
+    width: 720px;
+    top: 1412px;
+    margin-left: 600px;
+   }
+   
+   .TituloBajo{
+    margin-left: 100px;
+    width: 520px;
+    height: 62px;
+    margin-bottom: 24px;
+    margin-top: 100px;
+    font-size: 48px;
+     
+   }
+   .TextBajo{
+    width: 464px;
+    height: 204px;
+    font-family: monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align:left;
+    margin-left: 100px;
+     
+   }
+   #tituloInvitados{
+    /* font-family: IBMPlexSans; */
+    font-size: 48px;
+    color: #060A24;
+    letter-spacing: 0;
+    width: 581px;
+    height: 62px;
+    margin-left: 200px;
+    margin-bottom: 36px;
+
+   }
+   .invitados{
+    display:flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;   
+  }
+   .imgInvitados{
+    width: 480px;
+    height: 364px;
+  }
+   #titulotemas{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width:800px;
+    height: 62px;
+    /* font-family: IBMPlexSans; */
+    font-size: 48px;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align:left;
+    margin-top: 64px;
+    margin-bottom:56;
+    margin-left: 200px;
+    
+  }
+  .Temas{
+    display: flex;
+    align-items:center; 
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 100px;
+    margin-bottom: 34px;
+  }
+  .imgBjo{
+    display: flex;
+    align-items:center; 
+    text-align:center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 180px;
+    height: 124px;
+    margin-left: 80px;
+  }
+  .TextImgUno{
+    display: flex;
+    text-align:center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 100%;
+    height: 64px;
+    margin: 0;
+    font-size: 10px;
+    
+    
+  }
+  
+  .CadroAzulBajo{
+    display: flex;
+    background: blue;
+    clip-path: polygon(0 36%, 100% 0, 100% 100%, 0% 100%);
+    text-align:center;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    background: blue;
+    width: 100%;
+    height: 518px;
+    margin: auto;  
+  }
+   .TituloNovedades{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    background-color:blue;
+    color:white;
+    font-size: 48px;
+    /* font-family: IBMPlexSans; */
+    width: 90%;
+    height: 62px;
+    margin-top:200px;
+    margin-left: 378px;
+  }
+  .BotonDos{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    margin: auto;
+    width:345px; 
+    height: 56px;
+    font-size: 18px;
+    /* font-family: IBMPlexMono-Medium; */
+    color: #060A24;
+    justify-content: center;
+    background:#00F3BB;
+    margin-left: 547px;
+    margin-bottom:151px;
+    margin-top: 0px;    
+  }
+  .BotonEnlace2{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+
+  }
+  .footer{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    width:100%;
+    height: 65px;
+    
+  }
+   .Cody{
+    width: 269px;
+    height: 28px;
+    margin-top: 36px;
+    justify-content: center;
+    margin-left: 100px;
+    font-size: 16px;
+    margin-bottom: 31px;
+  }
+   .Icons{
+    width: 300px;
+    margin-top: 36px;
+    padding: 10px 0px;
+    margin-right:50px;
+    font-size: 16px;
+    margin-bottom: 31px;
+    color: black;
+    text-decoration: none;
+    margin-left: 300px;
+    margin-right: 100px;
+
+  }
+   .fa{
+    margin: 0 10px 0 0;
+    font-size: 18px;
+  }    
+}
+
+
+

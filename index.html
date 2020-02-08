@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> <!--Libreria de Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="Css/estilos.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="author" content="Mariano Peludero">
+    <meta name="description" content="Podcast">
+    <title>Podcast Channel</title>
+</head>
+<body> 
+    <div class="Contenedor">
+            <header class="header">
+                    <img class="logo" src="Imagenes/logo.svg" alt="logo">
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                    <ul class="menu">
+                        <li><a href="#episodio">EPISODIOS</a></li>
+                        <li><a href="#TituloBajo">NOSOTROS</a></li>
+                        <li><a href="#tituloInvitados">ENTREVISTAS</a></li>
+                        <li><a href="#titulotemas">TÓPICOS</a></li>
+                    </ul>                      
+            </header>
+
+            <section class="Seccion-Titulo">      
+                <div class="Titulo">
+                    <h1>Hello <del>World</del> pale blue dot</h1> <!--Falta el punto del final-->
+                </div>
+                <div class="Subtitulo">
+                    <p>El portal de podcast que explora el mundo de la programación y la tecnología. Nuevos episodíos, todos los jueves cada 15 días.</p>
+                </div>
+                <div class="Boton">                
+                    <a class="Nosotros" href="#titulotemas"><div class="BotonEnlace">CONOCÉ MÁS</div></a> 
+                </div>
+            </section>
+
+            
+            <section class="CuadroAzul">
+                <div class="Episodios">
+                    <h5 id="episodio">Episodios</h5>
+                </div>
+                <div class="Embebidos">        
+                    <iframe class="imgUno" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" allow="encrypted-media"></iframe>
+                    <iframe class="imgDos" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" allow="encrypted-media"></iframe>
+                    <iframe class="imgTres" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" allow="encrypted-media"></iframe>
+                    <iframe class="imgCuatro" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" allow="encrypted-media"></iframe>
+                </div> 
+            </section>
+            
+
+            <section class="ImgCelu">
+                <div class="ImgPhone"><img class="Phone" src="Imagenes/phone.png" alt="phone"></div> 
+            
+                <div id="TituloBajo">
+                    <h5 class="TituloBajo">De dónde venimos</h5> 
+                    <div class="TextBajo"><p>Our posturings, our imagined self-impostance,
+                    the delusion that we have some privileg
+                    position in the Universe, are challenged by this
+                    point on pale light.<br><br>
+                    Our planet is a lonely speck in the great
+                    enveloping cosmic dark. In our abscurity, in allow
+                    this vastness, there is no hint that help will
+                    come from elsewhere to save us from ourselves.
+                    </p></div>
+                </div>
+            </section> 
+
+            <section class="invitadosimg">       
+                    <h2 id="tituloInvitados">Invitados/as estelares</h2>
+
+                        <div class="invitados">
+                            <img class="imgInvitados" src="Imagenes/E.R.A..png" alt="invitadosUno">
+                            <img class="imgInvitados" src="Imagenes/Computer.png" alt="computer">
+                            <img class="imgInvitados" src="Imagenes/grace-hopper.png" alt="GraceHopper">
+                            <img class="imgInvitados" src="Imagenes/Katie-Bouman.png" alt="KatieBouman">
+                            <img class="imgInvitados" src="Imagenes/Margaret_Hamilton.png" alt="MargaretHamilton">
+                            <img class="imgInvitados" src="Imagenes/susan-kare.png" alt="SusanKare">
+                        </div>
+            </section> 
+
+            <section class="temas">
+                    <h2 id="titulotemas">Algunos de nuestros temas</h2>
+
+                    <div class="Temas">
+                                <div class="imgBjo"><img src="Imagenes/icon1.svg" alt="iconUno">
+                                    <div class="TextImgUno"><p>Trabajo remoto</p></div></div>         
+                                <div class="imgBjo"><img src="Imagenes/icon2.svg" alt="iconDos">
+                                    <div class="TextImgUno"><p>Repensando la programación</p></div></div>
+                                <div class="imgBjo"><img src="Imagenes/icon3.svg" alt="iconTres">
+                                    <div class="TextImgUno"><p>Bases del codigo</p></div></div>
+                                <div class="imgBjo"><img src="Imagenes/icon4.svg" alt="iconCuatro">
+                                    <div class="TextImgUno"><p>Seguridad informatica</p></div></div>
+                    </div>
+            </section>
+
+            <section class="CadroAzulBajo">
+                        <h2 class="TituloNovedades">¿Quierés las últimas novedades?</h2>
+                                
+                        <a class="BotonDos" href="#episodio"><div class="BotonEnlace2">ESCUCHÁ LOS EPISODIOS</div></a>
+                                
+            </section>                   
+        
+
+            <footer class="footer">
+                <div class="Cody">
+                    <p>&copy; 2019- Hello blue pale dot</p>
+                </div>
+                <div class="Icons">
+                    <a href="https://www.spotify.com/ar/" target="_blank"><i class="fa fa-spotify"></i></a>
+                    <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://telegram.org/" target="_blank"><i class="fa fa-telegram"></i></a>
+                    <!--<i style='font-size:24px' class='fab'>&#xf3fe;</i>-->
+                </div> 
+            </footer>
+          
+
+
+
+    </div> 
+</body>
+</html>
